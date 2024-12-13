@@ -19,3 +19,235 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.swiper {
+   margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+  width: 80%;
+  
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  box-sizing: content-box;
+  justify-content: center;
+  transform: translateZ(0px);
+  transition-property: transform;
+  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+  flex-wrap: nowrap;
+ 
+}
+.swiper-slide {
+  width: 16vw;
+  /* margin-right: 30px; */
+  flex-shrink: 0;
+  position: relative;
+  display: block;
+  padding-bottom: 48px;
+  height: auto;
+  margin-right: 30px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.card h3 {
+  /* font-family: Maison Neue Extended Extra Bold; */
+  color: black;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 8px;
+  text-align: center;
+  
+}
+.card-desc {
+  /* font-family: Maison Neue Book; */
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0px;
+  position: relative;
+}
+
+.skala {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  scroll-margin: 40px;
+}
+
+.skala h1 {
+  font-family: Maison Neue Extended Extra Bold;
+  color: black;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: .8px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.cta-button {
+  background-color: #00880D;
+  line-height: 24px;
+  color: white;
+  font-family: Maison Neue Demi;
+  font-size: 18px;
+  padding-left: 24px;
+  padding-right:24px;
+  border-radius: 96px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 44px;
+  display: inline-flex;
+  text-decoration: none;
+}
+.swiper2 {
+  display: block;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 95px;
+
+}
+.swiper-wrapper2 {
+   grid-template-columns: repeat(4, minmax(0, 1fr));
+   gap: 40px;
+   display: grid;
+}
+.swiper-slide2 {
+   width: 100%;
+   /* margin-right: 30px; */
+   flex-shrink: 0;
+   display: flex;
+   padding-bottom: 48px;
+   height: auto;
+   margin-right: 30px;
+}
+.skala-green {
+   display: flex;
+   height: auto;
+   transition-property: height, max-height, width, max-width;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: .15s;
+   --tw-shadow: 0 0 32px 10px #b2e5b8;
+   --tw-shadow-colored: 0 0 32px 10px var(--tw-shadow-color);
+   background-color: rgb(124, 204, 108);
+   border-radius: 40px;
+   flex-direction: column;
+   width: 100%;
+   transition-property: height, max-height, width, max-width;
+   transition-timing-function: cubic-bezier(.4,0,.2,1);
+   transition-duration: .15s;
+   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+.skala-purple {
+   display: flex;
+   height: auto;
+   transition-property: height, max-height, width, max-width;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: .15s;
+   --tw-shadow: 0px 0px 32px 10px #d0b4d4;
+   --tw-shadow-colored: 0px 0px 32px 10px var(--tw-shadow-color);
+   background-color: rgb(212 139 200);
+   border-radius: 40px;
+   flex-direction: column;
+   width: 100%;
+   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.skala-orange {
+   background-color: rgb(255 174 98);
+   display: flex;
+   height: auto;
+   transition-property: height, max-height, width, max-width;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: .15s;
+   --tw-shadow: 0px 0px 32px 10px #d0b4d4;
+   --tw-shadow-colored: 0px 0px 32px 10px  var(--tw-shadow-color);
+   border-radius: 40px;
+   flex-direction: column;
+   width: 100%;
+   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+.skala-blue {
+   display: flex;
+   height: auto;
+   background-color: rgb(74 201 227);
+   transition-property: height, max-height, width, max-width;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: .15s;
+   --tw-shadow: 0px 0px 32px 10px #b2e6f2;
+   --tw-shadow-colored: 0px 0px 32px 10px  var(--tw-shadow-color);
+   border-radius: 40px;
+   flex-direction: column;
+   width: 100%;
+   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+.skala-img {
+  transform: translateY(-80px);
+  width : 100%;
+  height: auto;
+}
+.card2 h3{
+   /* font-family: Maison Neue extended extra bold; */
+   font-size: 36px;
+   line-height: 36px;
+   font-weight: inherit;
+   padding-top: 0px;
+   padding: 0px 40px 0px;
+   text-align: left;
+}
+.card2 p {
+   margin-top: 12px;
+   margin: 15px;
+   padding-top: 0px;
+   padding-left: 20px;
+   padding-right: 20%;
+   padding-bottom: 20px;
+   text-align: left;
+}
+
+.bg3 {
+  position: relative;
+  width: 100%;
+  height: 120x;
+  background-color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  scroll-margin: 40px;
+  position: relative;
+}
+
+body {
+  font-family: 'MaisonNeue', sans-serif;
+}
+
